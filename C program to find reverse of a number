@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+intx,y,t;
+printf("enter two integers\n");
+scanf("%d%d",&r,&y);
+printf("before swapping \n first integer=%d\n second integer=%d\n",x,y);
+t=x;
+x=y;
+y=t;
+print f("after swapping first integer=%d\n second integer=%d\n",x,y);
+return 0;
+}
