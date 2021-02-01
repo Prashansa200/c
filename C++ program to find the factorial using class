@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+ 
+class factorial
+{
+private:
+int n1,n2,f=1;
+public:
+void input();
+void calc();
+void display();
+};
+ 
+void factorial::input()
+{
+ cout<<"\nEnter any number :: ";
+cin>>n1;
+}
+ 
+void factorial::calc()
+{
+n2=n1;
+if(n1==0||n1==1)
+cout<<"\nFactorial of Number [ "<<n1<<" ] is ::\n";
+ else
+ {
+ while(n1>0)
+ {
+ f=f*n1;
+ n1--;
+ }
+}
+ 
+}
+ 
+void factorial::display()
+{
+cout<<"\nFactorial of [ "<<n2<<" ] is :: "<<f<<"\n";
+}
+ 
+int main ()
+{
+ factorial f;
+ f.input();
+ f.calc();
+f.display();
+ return 0;
+}
